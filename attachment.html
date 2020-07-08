@@ -1,0 +1,23 @@
+
+<!-- 附件上传模板 -->
+
+<script id="fileTemplate" type="text/x-kendo-template">
+
+   <span class='k-progress'></span>
+
+   #=name#<a class="k-file_delete" fid='#=files[0].uid#' onclick="delFile(this)" fileurl='#=name#' style='padding-left:50px;'>Remove</a>
+
+</script>
+
+
+<!-- 文件显示模板 -->
+
+<script id="fileTemplate2" type="text/x-kendo-template">
+
+  <span class='k-progress'></span>
+
+     #=name#
+
+  <a class="k-file_href" fid='#=files[0].uid#' onclick="downloadAttachment(this)" fileurl='#=name#' style='padding-left:50px;cursor:pointer' >download</a>
+
+</script>
